@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins ' ,sans-serif;
+}
+body{
+    background: linear-gradient(100deg,#fff, #1853b8);
+}
+h1 b{
+    color: #e69a20;
+}
+.home-page{
+    font-size: 20px;
+    margin: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav li a{
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    transition: 0.6s;
+}
+nav ul li a:hover{
+    background:aqua;
+    color: #c01818;
+}
+#fan{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fan img{
+    border: 20px solid aqua;
+    padding: 50px;
+    border-radius: 50%;
+    animation: fan linear infinite;
+}
+button{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin: 7px 20px;
+    border: none;
+    padding:15px 20px;
+    background: silver;
+    border-radius:50% ;
+    transition: 0.1s;
+    font-size: 25px;
+    font-weight: 400;
+}
+button:active{
+    box-shadow: 0 10px 10px black;
+    transform: scale(0.9s);
+}
+#fan button:nth-child(3){
+    background: rgb(35, 190, 35);
+}
+#fan button:nth-child(4){
+    background: rgb(183, 27, 27);
+}
+@keyframes fan {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#about{
+    margin: 15px 30px;
+}
+#about h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 5px 10px;
+}
+#about p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 7px 8px;
+}
+#work{
+    margin: 10px 30px;
+}
+#work h1{
+    margin: 9px 0;
+    font-size: 40px;
+    font-weight: 700px;
+
+}
+#work p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 7px 8px;
+}
+.images{
+    margin: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.images div img {
+    filter: grayscale(100%);
+}
+.images div img:hover{
+   filter: grayscale(0%);
+   height: 400px;
+   width: 500px;
+}
+#footer{
+    background: #000;
+    border-top: 10px solid gray;
+    padding: 15px 60px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+#footer p{
+    padding: 25px 40px;
+}
+
